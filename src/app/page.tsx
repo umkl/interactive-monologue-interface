@@ -4,9 +4,5 @@ import { generateMonologueMetadata } from "../lib/meta";
 export const generateMetadata = generateMonologueMetadata;
 
 export default function Page() {
-    return (
-        <div>
-            <Monologue locale="en" />
-        </div>
-    );
+    return <Monologue locale="en" />;
 }
