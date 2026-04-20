@@ -1,5 +1,5 @@
 "use client";
-import { useReducer, useState } from "react";
+import { useMemo, useReducer } from "react";
 import { ChatContext } from "./chatContext";
 import { initialChatBubbleIds } from "../const/prefs";
 import { chatReducerFactory } from "./chatReducer";
@@ -11,17 +11,30 @@ type ChatProviderProps = {
 
 export default function ChatProvider(props: ChatProviderProps) {
   const children = props.children;
-  const chatBubbleMap = new Map<string, ChatBubble>(props.chatBubbleEntries);
-  const initialChat: Chat = {
-    chatBubbles: initialChatBubbleIds
-      .filter(id => chatBubbleMap.has(id))
-      .map(id => chatBubbleMap.get(id)),
-  };
-  const reducer = useReducer(chatReducerFactory(chatBubbleMap), initialChat);
-  const chatStore: ChatStore = {
-    state: reducer[0],
-    dispatch: reducer[1],
-  };
+  const chatBubbleMap = useMemo(
+    () => new Map<string, ChatBubble>(props.chatBubbleEntries),
+    [props.chatBubbleEntries],
+  );
+  const chatReducer = useMemo(
+    () => chatReducerFactory(chatBubbleMap),
+    [chatBubbleMap],
+  );
+  const [state, dispatch] = useReducer(
+    chatReducer,
+    undefined,
+    () => ({
+      chatBubbles: initialChatBubbleIds
+        .map((id) => chatBubbleMap.get(id))
+        .filter((chatBubble): chatBubble is ChatBubble => Boolean(chatBubble)),
+    }),
+  );
+  const chatStore: ChatStore = useMemo(
+    () => ({
+      state,
+      dispatch,
+    }),
+    [state, dispatch],
+  );
   return <ChatContext.Provider
     value={chatStore}
   >{children}</ChatContext.Provider>

@@ -4,7 +4,12 @@ import { visualTokenStreamingSpeed } from "../const/prefs";
 export function useTextStream(textToDisplay: string, enabled: boolean) {
   const [displayedText, setDisplayedText] = useState(textToDisplay);
   useEffect(() => {
-    if (!enabled) return;
+    if (!enabled) {
+      setDisplayedText(textToDisplay);
+      return;
+    }
+
+    setDisplayedText("");
     let currentIndex = 0;
     const interval = setInterval(() => {
       if (currentIndex < textToDisplay.length) {
@@ -15,7 +20,7 @@ export function useTextStream(textToDisplay: string, enabled: boolean) {
       }
     }, visualTokenStreamingSpeed);
     return () => clearInterval(interval);
-  }, [textToDisplay]);
+  }, [enabled, textToDisplay]);
   return {
     displayText: displayedText,
     done: displayedText === textToDisplay,

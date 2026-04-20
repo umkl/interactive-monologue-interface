@@ -1,6 +1,6 @@
 declare module NodeJS {
   interface ProcessEnv {
-    MONOLOGUE_SERVER: string;
-    MONOLOGUE_SERVER_DIR: string;
+    FILE_SERVER_URL: string;
+    FILE_SERVER_DIR: string;
   }
 }

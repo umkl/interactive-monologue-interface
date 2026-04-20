@@ -32,9 +32,7 @@ export function chatReducerFactory(chatBubbleMap: Map<string, ChatBubble>) {
         window.open(url2, "_blank")?.focus();
         return { ...state };
       default:
-        return {
-          chatBubbles: [...state.chatBubbles, newChatBubble],
-        };
+        return state;
     }
   };
 }

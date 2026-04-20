@@ -1,0 +1,86 @@
+{
+  "chat:resume": {
+    "label": "Résumé",
+    "event": {
+      "type": "chat",
+      "value": "resume"
+    }
+  },
+  "chat:work": {
+    "label": "Work",
+    "event": {
+      "type": "chat",
+      "value": "work"
+    }
+  },
+  "chat:contact": {
+    "label": "Contact",
+    "event": {
+      "type": "chat",
+      "value": "contact"
+    }
+  },
+  "locale:iterate": {
+    "label": "Swap Locale",
+    "event": {
+      "type": "locale",
+      "value": "iterate"
+    }
+  },
+  "mail:mike": {
+    "label": "michael@ungar.io",
+    "event": {
+      "type": "mail",
+      "value": "michael@ungar.io"
+    }
+  },
+  "link:github": {
+    "label": "github/umkl",
+    "event": {
+      "type": "link",
+      "value": "https://github.com/umkl"
+    }
+  },
+  "meet:mike": {
+    "label": "meet:michael",
+    "event": {
+      "type": "link",
+      "value": "https://app.cal.eu/michaelungar/30min"
+    }
+  },
+  "download:resume": {
+    "label": "resume.pdf",
+    "event": {
+      "type": "download",
+      "value": "https://bucket-kohl.vercel.app/resume.pdf"
+    }
+  },
+  "link:rudi.at": {
+    "label": "rudi.at",
+    "event": {
+      "type": "link",
+      "value": "https://rudi.at"
+    }
+  },
+  "link:ia-web": {
+    "label": "intelligent-athletics.com",
+    "event": {
+      "type": "link",
+      "value": "https://intelligent-athletics.com"
+    }
+  },
+  "link:cal-prompt-transformer": {
+    "label": "prompt-calendar-transformer",
+    "event": {
+      "type": "link",
+      "value": "https://prompt-calendar-transformer.smoov.tools"
+    }
+  },
+  "link:ledger": {
+    "label": "unified-transaction-ledger",
+    "event": {
+      "type": "link",
+      "value": "https://github.com/umkl/unified-transaction-ledger"
+    }
+  }
+}

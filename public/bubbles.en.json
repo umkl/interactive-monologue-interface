@@ -1,0 +1,18 @@
+{
+  "intro": {
+    "text": "What’s good, I’m Michael. I spend most of my time  building tracking and management tools using Typescript. Ask me about my latest project.",
+    "actionIds": ["chat:resume", "chat:work", "chat:contact"]
+  },
+  "resume": {
+    "text": "Currently I am working at UNIQA for an corporate startup, contributing to feature development across both the frontend and backend.",
+    "actionIds": ["link:rudi.at", "download:resume"]
+  },
+  "work": {
+    "text": "My main project is Intelligent Athletics, an exercise management platform for coaches.",
+    "actionIds": ["link:ia-web", "link:cal-prompt-transformer", "link:ledger"]
+  },
+  "contact": {
+    "text": "I’d love to set up a meeting with you.",
+    "actionIds": ["mail:mike", "link:github", "meet:mike"]
+  }
+}

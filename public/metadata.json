@@ -1,0 +1,13 @@
+{
+  "title": "Michael’s Monologue",
+  "description": "What’s good, I’m Michael. I spend most of my time building tracking and management tools using Typescript.\n Ask me about my latest project.",
+  "openGraph": {
+    "title": "Michael’s Monologue",
+    "description": "What’s good, I’m Michael. I spend most of my time building tracking and management tools using Typescript.\n Ask me about my latest project.",
+    "images": ["https://ungar.io/pfp.jpg"]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "images": ["https://ungar.io/pfp.jpg"]
+  }
+}
