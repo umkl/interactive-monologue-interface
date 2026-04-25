@@ -1,18 +1,34 @@
 {
-  "intro": {
-    "text": "Servus, Michael hier! I spend most of my time  building tracking and management tools using Typescript. Ask me about my latest project.",
-    "actionIds": ["chat:resume", "chat:work", "chat:contact"]
-  },
-  "resume": {
-    "text": "Currently I am working at UNIQA for an corporate startup, contributing to feature development across both the frontend and backend.",
-    "actionIds": ["link:rudi.at", "download:resume"]
-  },
-  "work": {
-    "text": "My main project is Intelligent Athletics, an exercise management platform for coaches.",
-    "actionIds": ["link:ia-web", "link:cal-prompt-transformer", "link:ledger"]
-  },
-  "contact": {
-    "text": "I’d love to set up a meeting with you.",
-    "actionIds": ["mail:mike", "link:github", "meet:mike"]
-  }
+    "intro": {
+        "text": "Servus, Michael hier! I spend most of my time  building tracking and management tools using Typescript. Ask me about my latest project.",
+        "actionIds": ["chat:resume", "chat:work", "chat:contact"]
+    },
+    "resume": {
+        "text": "Currently I am working at UNIQA for an corporate startup, contributing to feature development across both the frontend and backend.",
+        "actionIds": ["link:rudi.at", "download:resume"]
+    },
+    "work": {
+        "items": [
+            {
+                "date": "2025 — 2026",
+                "title": "intelligent-athletics.com",
+                "subtitle": "coaching dashbaord für übersicht im leistungssport",
+                "images": ["iaw/shot-1.png", "iaw/shot-2.png", "iaw/shot-3.png", "iaw/shot-4.png"]
+            },
+            {
+                "date": "2026",
+                "title": "plan.somaed.at",
+                "images": ["stp/shot-1.png", "stp/shot-2.png", "stp/shot-3.png"]
+            }
+        ],
+        "actionIds": [
+            "link:ia-web",
+            "link:cal-prompt-transformer",
+            "link:ledger"
+        ]
+    },
+    "contact": {
+        "text": "I’d love to set up a meeting with you.",
+        "actionIds": ["mail:mike", "link:github", "meet:mike"]
+    }
 }

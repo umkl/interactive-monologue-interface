@@ -8,8 +8,27 @@
     "actionIds": ["link:rudi.at", "download:resume"]
   },
   "work": {
-    "text": "My main project is Intelligent Athletics, an exercise management platform for coaches.",
-    
+    "items": [
+        {
+            "date": "2025 — 2026",
+            "title": "intelligent-athletics.com",
+            "subtitle": "",
+            "images": [
+                "iaw/shot-1.png",
+                "iaw/shot-2.png",
+                "iaw/shot-3.png"
+            ]
+        },
+        {
+            "date": "2026",
+            "title": "plan.somaed.at",
+            "images": [
+                "stp/shot-1.png",
+                "stp/shot-2.png",
+                "stp/shot-3.png"
+            ]
+        }
+    ], 
     "actionIds": ["link:ia-web", "link:cal-prompt-transformer", "link:ledger"]
   },
   "contact": {

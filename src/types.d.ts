@@ -9,9 +9,17 @@ type ChatStore = {
 
 type ChatBubble = {
     id: string;
-    text: string;
+    text?: string;
+    items?: ProjectItem[];
     actions: ActionButton[];
     actionIds: string[];
+};
+
+type ProjectItem = {
+    date: string;
+    title: string;
+    subtitle?: string;
+    images?: string[];
 };
 
 type ActionButtonType = "chat" | "locale" | "link" | "download" | "mail";

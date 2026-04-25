@@ -9,7 +9,7 @@ export default function ChatSrOnly(props: ChatSrOnlyProps) {
             {props.chatBubbles.map((chatBubble) => (
                 <div key={chatBubble.id}>
                     <h1>{chatBubble.id}</h1>
-                    <p>{chatBubble.text}</p>
+                    {chatBubble.text ? <p>{chatBubble.text}</p> : null}
                 </div>
             ))}
         </div>

@@ -1,3 +1,9 @@
+.project-container {
+    /* flex: 1; */
+    /* min-width: 0; */
+    /* padding: 0 1rem; */
+}
+
 .project-header {
     font-size: 1.5em;
     font-weight: 600;
@@ -60,21 +66,80 @@
 }
 
 .project-image {
+    display: block;
     height: 80px;
-    margin-left: 10px;
     aspect-ratio: 16/9;
     background-color: gray;
     border-radius: 8px;
     object-fit: cover;
 }
 
+.project-image-button {
+    margin-left: 10px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.project-image-button:focus-visible {
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
 .project-section {
-    margin-top: 1em;
     flex-direction: row;
     display: flex;
     gap: 0.5em;
+    margin-bottom: 1.4rem;
 }
 
 .project-images-wrapper {
     padding-bottom: 80px;
+    /* position: relative; */
+}
+
+.project-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 100;
+}
+
+.project-modal {
+    position: relative;
+    width: min(1100px, calc(100vw - 48px));
+    max-height: calc(100vh - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-modal-image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 48px);
+    border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.project-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border: 0;
+    border-radius: 999px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
 }
