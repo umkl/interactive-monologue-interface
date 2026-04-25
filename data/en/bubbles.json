@@ -9,6 +9,7 @@
   },
   "work": {
     "text": "My main project is Intelligent Athletics, an exercise management platform for coaches.",
+    
     "actionIds": ["link:ia-web", "link:cal-prompt-transformer", "link:ledger"]
   },
   "contact": {

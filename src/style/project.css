@@ -1,0 +1,80 @@
+.project-header {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: start;
+}
+
+.project-time {
+    font-size: 1rem;
+    color: gray;
+    margin: 0;
+    text-wrap: nowrap;
+}
+
+.project-title {
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-title > h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.project-title > p {
+    margin: 0;
+    font-size: 1rem;
+    color: gray;
+}
+
+.project-images {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.scroll-spacer {
+    width: calc(50% - 180px);
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.pre-scroll-spacer {
+    width: calc(50% - 250px);
+    flex-shrink: 0;
+}
+
+.post-scroll-spacer {
+    width: calc(50% - 250px);
+    flex-shrink: 0;
+}
+
+.project-image {
+    height: 80px;
+    margin-left: 10px;
+    aspect-ratio: 16/9;
+    background-color: gray;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-section {
+    margin-top: 1em;
+    flex-direction: row;
+    display: flex;
+    gap: 0.5em;
+}
+
+.project-images-wrapper {
+    padding-bottom: 80px;
+}

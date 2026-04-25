@@ -4,6 +4,7 @@ import ChatBubble from "../comp/ChatBubble";
 import useScrollDisabler from "../hooks/useScrollDisabler";
 import ActionButton from "../comp/ActionButton";
 import { ChatContext } from "../state/chatContext";
+import Project from "./Project";
 
 export default function ChatBubbles() {
     const { state, dispatch } = useContext(ChatContext);
@@ -99,6 +100,9 @@ export default function ChatBubbles() {
                     );
                 })}
             </div>
+            <Project />
+            <Project />
+            <Project />
             <div className="chat-bubbles-spacer-block" />
         </div>
     );
