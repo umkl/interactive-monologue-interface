@@ -1,18 +1,24 @@
 {
-  "scripts": {
-    "dev": "next dev",
-    "start": "next start",
-    "build": "pnpm exec next build",
-    "ship": "vercel --prod"
-  },
-  "dependencies": {
-    "next": "^16.2.4",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
-  },
-  "devDependencies": {
-    "@types/node": "25.0.3",
-    "@types/react": "19.2.7",
-    "typescript": "5.9.3"
-  }
+    "name": "interactive-monologue-interface",
+    "version": "0.1",
+    "scripts": {
+        "dev": "PORT=4234 next dev",
+        "start": "next start",
+        "build": "pnpm exec next build",
+        "build:static": "NEXT_OUTPUT_EXPORT=1 pnpm exec next build",
+        "ship": "vercel --prod",
+        "version:major": "",
+        "version:minor": "",
+        "version:bug": ""
+    },
+    "dependencies": {
+        "next": "^16.2.4",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3"
+    },
+    "devDependencies": {
+        "@types/node": "25.0.3",
+        "@types/react": "19.2.7",
+        "typescript": "5.9.3"
+    }
 }
